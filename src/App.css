@@ -1,0 +1,31 @@
+body {
+  background-color: rgb(238, 246, 248);
+}
+.heading {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.9rem;
+  margin-top: 6rem;
+  font-family: "YourChosenFont", sans-serif;
+}
+
+h4,
+p {
+  margin: 8px;
+}
+
+img {
+  height: 40%;
+  width: 40%;
+  margin: 1rem 0.5rem;
+}
+
+.books {
+  background-color: white;
+  margin: 5px 5px;
+  height: 30%;
+  width: 30%;
+  text-align: center;
+  border-radius: 1rem;
+  overflow: hidden;
+}
