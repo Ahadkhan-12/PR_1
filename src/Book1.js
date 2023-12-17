@@ -1,15 +1,12 @@
 import "./App.css";
 
-const Book1 = () => {
+const Book1 = (props) => {
   return (
     <>
       <div className="books">
-        <img
-          src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71hwUY5ZmxL._AC_UF1000,1000_QL80_.jpg"
-          alt="img"
-        />
-        <h4>Intersting Facts about curious minds</h4>
-        <p>Jordon Moore</p>
+        <img src={props.image} alt="img" />
+        <h4>{props.bookname}</h4>
+        <p className="op">{props.author}</p>
       </div>
     </>
   );
