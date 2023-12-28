@@ -7,6 +7,15 @@
 body {
   background-color: #f1f5f8;
 }
+
+.booklist {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 5rem auto;
+  display: grid;
+  gap: 2rem;
+}
+
 .heading {
   text-align: center;
   font-weight: bold;
@@ -14,33 +23,31 @@ body {
   margin-top: 6rem;
   font-family: "Open Sans", sans-serif;
 }
-div {
-  display: inline-block;
-  overflow: hidden;
-}
-
-h4,
-p {
-  margin: 5px;
-}
-
-img {
-  height: 40%;
-  width: 40%;
-  margin: auto;
-}
 
 .books {
-  padding: 15px;
-  background-color: white;
-  margin: 5px 5px;
-  height: 30%;
-  width: 30%;
-  text-align: center;
+  background-color: #fff;
   border-radius: 1rem;
-  overflow: hidden;
+  padding: 2rem;
+  text-align: center;
   font-family: "Barlow", sans-serif;
 }
-.op {
+
+.books img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.books h4 {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.books p {
   opacity: 68%;
+}
+
+@media screen and (min-width: 768px) {
+  .booklist {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
