@@ -43,11 +43,13 @@ body {
 }
 
 .books p {
+  font-size: 0.87rem;
   opacity: 68%;
 }
 
 @media screen and (min-width: 768px) {
   .booklist {
     grid-template-columns: repeat(3, 1fr);
+    align-items: start;
   }
 }
