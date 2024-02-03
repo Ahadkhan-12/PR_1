@@ -24,12 +24,18 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.book_comp {
+  position: relative;
+}
+
 .books {
+  position: absolute;
   background-color: #fff;
   border-radius: 1rem;
   padding: 2rem;
   text-align: center;
   font-family: "Barlow", sans-serif;
+  z-index: 1;
 }
 
 .books img {
@@ -45,6 +51,25 @@ body {
 .books p {
   font-size: 0.87rem;
   opacity: 68%;
+}
+.numbers {
+  position: absolute;
+  background-color: #c45500;
+  z-index: 10;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+  padding: 0 8px;
+}
+.triangle {
+  position: absolute;
+  z-index: 10;
+  left: 41px;
+  width: 0;
+  height: 0;
+  border-right: 10px solid transparent;
+  border-top: 25px solid #c45500;
 }
 
 @media screen and (min-width: 768px) {

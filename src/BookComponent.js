@@ -1,13 +1,17 @@
 import "./index.css";
 
 const Book = (props) => {
-  const { image, bookname, author } = props;
+  const { image, bookname, author, index } = props;
   return (
     <>
-      <div className="books">
-        <img src={image} alt={bookname} />
-        <h4>{bookname}</h4>
-        <p>{author}</p>
+      <div class="book_comp">
+        <div class="numbers">{`# ${index + 1}`}</div>
+        <div class="triangle "></div>
+        <div className="books">
+          <img src={image} alt={bookname} />
+          <h4>{bookname}</h4>
+          <p>{author}</p>
+        </div>
       </div>
     </>
   );

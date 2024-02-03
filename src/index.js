@@ -9,10 +9,14 @@ const Bookslist = () => {
   return (
     <>
       <section className="booklist">
-        {Books.map((book) => {
+        {Books.map((book, index) => {
           return (
             <>
-              <BookComponent {...book} key={book.id}></BookComponent>
+              <BookComponent
+                {...book}
+                key={book.id}
+                index={index}
+              ></BookComponent>
             </>
           );
         })}
