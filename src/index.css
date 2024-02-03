@@ -72,6 +72,15 @@ body {
   border-top: 25px solid #c45500;
 }
 
+.bookheading {
+  position: absolute;
+  font-weight: bold;
+  font-size: 1.4rem;
+  top: -2rem;
+  padding: 0 0 0 3.5rem;
+  font-family: "Open Sans", sans-serif;
+}
+
 @media screen and (min-width: 768px) {
   .booklist {
     grid-template-columns: repeat(3, 1fr);

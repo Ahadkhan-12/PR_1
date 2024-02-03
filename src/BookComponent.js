@@ -1,11 +1,11 @@
 import "./index.css";
 
 const Book = (props) => {
-  const { image, bookname, author, index } = props;
+  const { image, bookname, author, number } = props;
   return (
     <>
       <div class="book_comp">
-        <div class="numbers">{`# ${index + 1}`}</div>
+        <div class="numbers">{`# ${number + 1}`}</div>
         <div class="triangle "></div>
         <div className="books">
           <img src={image} alt={bookname} />

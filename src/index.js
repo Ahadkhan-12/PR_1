@@ -8,19 +8,22 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 const Bookslist = () => {
   return (
     <>
-      <section className="booklist">
-        {Books.map((book, index) => {
-          return (
-            <>
-              <BookComponent
-                {...book}
-                key={book.id}
-                index={index}
-              ></BookComponent>
-            </>
-          );
-        })}
-      </section>
+      <div class="book_comp">
+        <h1 className="bookheading">Best Selling Books</h1>
+        <section className="booklist">
+          {Books.map((book, index) => {
+            return (
+              <>
+                <BookComponent
+                  {...book}
+                  key={book.id}
+                  number={index}
+                ></BookComponent>
+              </>
+            );
+          })}
+        </section>
+      </div>
     </>
   );
 };
